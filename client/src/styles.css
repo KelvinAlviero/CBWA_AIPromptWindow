@@ -1,0 +1,275 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #f2f4f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.login-page {
+  width: min(360px, calc(100% - 32px));
+  margin: 18vh auto 0;
+}
+
+.login-page h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.login-page form,
+.prompt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #bcc5d1;
+  border-radius: 4px;
+  padding: 9px 10px;
+  background: #fff;
+  color: #172033;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #9bc2ff;
+  border-color: #4d86cc;
+}
+
+button,
+.button-link {
+  border: 0;
+  border-radius: 4px;
+  padding: 9px 14px;
+  background: #2463a9;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover,
+.button-link:hover {
+  background: #1b528f;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Links that look like buttons (Landing and Login pages) */
+.button-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.secondary-button {
+  background: #dde3ea;
+  color: #172033;
+}
+
+.secondary-button:hover {
+  background: #ccd5df;
+}
+
+.github-button {
+  display: block;
+  background: #24292f;
+}
+
+.github-button:hover {
+  background: #1b1f24;
+}
+
+.error {
+  min-height: 20px;
+  margin: 0;
+  color: #b42318;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 18vh;
+  color: #667085;
+}
+
+/* Landing page */
+.landing {
+  width: min(640px, calc(100% - 32px));
+  margin: 12vh auto 0;
+}
+
+.landing h1 {
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.feature-list {
+  line-height: 1.7;
+  padding-left: 20px;
+}
+
+.landing-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.database-page {
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-label {
+  color: #667085;
+  font-size: 0.9rem;
+}
+
+.topbar h1,
+.list-header h2 {
+  margin: 0;
+}
+
+.sheet {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid #d8dee7;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(23, 32, 51, 0.08);
+}
+
+.prompt-form {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.checkbox-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 4px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.form-actions,
+.row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.form-actions {
+  margin-top: 6px;
+}
+
+.list-header {
+  border-top: 1px solid #e3e7ed;
+  padding-top: 24px;
+  margin-bottom: 16px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1300px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #dde3ea;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background: #edf1f5;
+}
+
+.row-actions {
+  flex-direction: column;
+}
+
+.delete-button {
+  background: #b42318;
+}
+
+.delete-button:hover {
+  background: #912018;
+}
+
+.empty-message {
+  color: #667085;
+  text-align: center;
+  padding: 24px 0;
+}
+
+@media (max-width: 700px) {
+  .sheet {
+    padding: 18px;
+  }
+}
