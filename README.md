@@ -1,4 +1,5 @@
 # AI Capsule
+Github link: https://github.com/KelvinAlviero/CBWA_AIPromptWindow/tree/mk2
 
 A private prompt library: sign in with GitHub, then create, view, update and delete your own AI prompt records.
 
